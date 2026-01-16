@@ -1,0 +1,7 @@
+services:
+  marcador-rentoy:
+    image: f1rul4yx/marcador-rentoy:1.0
+    container_name: marcador-rentoy
+    ports:
+      - "80:80"
+    restart: unless-stopped
