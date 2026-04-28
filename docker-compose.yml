@@ -1,6 +1,6 @@
 services:
   marcador-rentoy:
-    image: f1rul4yx/marcador-rentoy:1.0
+    image: f1rul4yx/marcador-rentoy:latest
     container_name: marcador-rentoy
     ports:
       - "80:80"
