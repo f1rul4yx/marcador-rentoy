@@ -21,11 +21,12 @@ No requiere configuración adicional.
 docker compose up -d
 ```
 
-Accede a `http://TU_IP`. La aplicación se sirve en el puerto 80.
+Accede a `http://TU_IP:3000`.
 
 ```bash
 docker compose down       # Parar
 docker compose restart    # Reiniciar
+docker compose logs -f    # Ver logs
 ```
 
 ## Build

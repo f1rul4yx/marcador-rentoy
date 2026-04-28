@@ -4,7 +4,11 @@ services:
     container_name: marcador-rentoy
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - TZ=Europe/Madrid
+      - NODE_ENV=production
     logging:
       driver: "json-file"
       options:

@@ -1,0 +1,12 @@
+{
+  "name": "marcador-rentoy",
+  "version": "1.0.0",
+  "description": "Marcador de puntos para el juego de cartas Rentoy",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
