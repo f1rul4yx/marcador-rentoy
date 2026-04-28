@@ -1,6 +1,19 @@
-# 🎯 Marcador Rentoy
+# marcador-rentoy
 
 Marcador de puntos para el juego de cartas Rentoy.
+
+## Qué es
+
+Aplicación web estática para llevar la puntuación en partidas de Rentoy. Dos jugadores, puntos objetivo configurables, historial de hasta 50 partidas guardado en localStorage y detección automática de ganador con animación de confeti.
+
+## Instalación
+
+```bash
+git clone https://github.com/f1rul4yx/marcador-rentoy.git
+cd marcador-rentoy
+```
+
+No requiere configuración adicional.
 
 ## Uso
 
@@ -8,33 +21,16 @@ Marcador de puntos para el juego de cartas Rentoy.
 docker compose up -d
 ```
 
-Accede a `http://TU_IP`.
+Accede a `http://TU_IP`. La aplicación se sirve en el puerto 80.
 
-## Construcción de la imagen
+```bash
+docker compose down       # Parar
+docker compose restart    # Reiniciar
+```
+
+## Build
 
 ```bash
 docker build -t f1rul4yx/marcador-rentoy:latest ./build
 docker push f1rul4yx/marcador-rentoy:latest
 ```
-
-## Comandos útiles
-
-```bash
-docker compose up -d      # Arrancar
-docker compose down       # Parar
-docker compose restart    # Reiniciar
-```
-
-## Funcionalidades
-
-- Tablero de puntuación para dos jugadores
-- Puntos objetivo configurables
-- Botones +1, +3, -1, -3
-- Undo/Redo con Ctrl+Z / Ctrl+Y
-- Detección automática de ganador con confeti
-- Historial de partidas (máximo 50) guardado en localStorage
-- Diseño responsive
-
-## Stack
-
-HTML, CSS, JavaScript, Docker, Apache
