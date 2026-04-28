@@ -2,6 +2,11 @@ services:
   marcador-rentoy:
     image: f1rul4yx/marcador-rentoy:latest
     container_name: marcador-rentoy
+    restart: unless-stopped
     ports:
       - "80:80"
-    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
